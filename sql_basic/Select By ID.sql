@@ -1,0 +1,6 @@
+--Select By ID
+
+SET NOCOUNT ON;
+SELECT * FROM CITY
+WHERE ID = 1661;
+go
