@@ -1,0 +1,5 @@
+--Weather Observation Station 1
+
+SET NOCOUNT ON;
+SELECT CITY,STATE FROM STATION;
+go

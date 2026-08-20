@@ -1,0 +1,7 @@
+--Weather Observation Station 3
+
+SET NOCOUNT ON;
+SELECT  DISTINCT CITY FROM STATION
+WHERE ID%2=0 ;
+
+go

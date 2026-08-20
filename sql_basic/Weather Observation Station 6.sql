@@ -1,0 +1,7 @@
+--Weather Observation Station 6
+
+SET NOCOUNT ON;
+SELECT DISTINCT CITY FROM STATION
+WHERE CITY LIKE '[aeiou]%';
+
+go

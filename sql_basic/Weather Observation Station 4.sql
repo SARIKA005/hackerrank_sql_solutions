@@ -1,0 +1,6 @@
+--Weather Observation Station 4
+
+SET NOCOUNT ON;
+SELECT COUNT(CITY) - COUNT(DISTINCT CITY)
+FROM STATION;
+go
