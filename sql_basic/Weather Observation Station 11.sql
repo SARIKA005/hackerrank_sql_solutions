@@ -1,0 +1,5 @@
+--Weather Observation Station 11
+SET NOCOUNT ON;
+SELECT DISTINCT CITY FROM STATION
+WHERE CITY  NOT LIKE '[aeiou]%' OR CITY NOT LIKE '%[aeiou]';
+go
