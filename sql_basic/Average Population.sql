@@ -1,0 +1,7 @@
+--Average Population
+SET NOCOUNT ON;
+
+SELECT AVG(ROUND(POPULATION,2)) FROM CITY
+
+
+go
