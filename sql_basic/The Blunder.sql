@@ -1,0 +1,11 @@
+--The Blunder
+SET NOCOUNT ON;
+
+
+
+SELECT CEILING(
+    AVG(CAST(Salary AS DECIMAL(10,2))) -
+    AVG(CAST(REPLACE(CAST(Salary AS VARCHAR), '0', '') AS INT))
+)
+FROM EMPLOYEES;
+go

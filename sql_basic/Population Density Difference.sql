@@ -1,0 +1,5 @@
+--Population Density Difference
+SET NOCOUNT ON;
+
+SELECT MAX(POPULATION) - MIN(POPULATION) FROM CITY
+go
