@@ -1,0 +1,14 @@
+--Weather Observation Station 20
+SET NOCOUNT ON;
+
+SELECT DISTINCT
+    CAST(
+        PERCENTILE_CONT(0.5) 
+        WITHIN GROUP (ORDER BY LAT_N) 
+        OVER () 
+        AS DECIMAL(10,4)
+    ) AS median
+FROM STATION;
+
+
+go
